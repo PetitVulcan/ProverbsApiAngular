@@ -1,0 +1,6 @@
+<div *ngFor="let proverb of proverbs" class="row proverb">
+    <div class="col-9">{{proverb.saying}}</div>
+    <div class="col-1">{{proverb.author}}</div>
+    <div class="col-1"><button class="btn btn-primary" routerLink="/update/{{proverb.id}}">Modify</button></div>
+    <div class="col-1"><button class="btn btn-danger" (click)="Delete(proverb.id)">Delete</button></div>    
+</div>
