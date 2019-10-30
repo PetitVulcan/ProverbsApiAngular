@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http'
 @Injectable()
 export class ApiService {
 
-  baseUrl= "http://localhost:52978";
+  baseUrl= "http://localhost:54660";
   constructor(private http:HttpClient) { }
 
   get = (url)=>{

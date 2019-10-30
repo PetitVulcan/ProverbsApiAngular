@@ -1,18 +1,23 @@
-<div class="row">
-    <h1 class="col">Add proverb</h1>
+<div class="container">
+    <div class="row">
+        <div class="col title">Add proverb</div>
+    </div>
+    <form>
+        <div class="row line">
+            <input type="text" class="form-control col" placeholder="Saying" name="Saying" [(ngModel)]="Saying" />
+        </div>
+        <div class="row line">
+            <input type="text" class="form-control col" placeholder="Author" name="Author" [(ngModel)]="Author" />
+        </div>
+        <div class="row line">
+            <select class="form-control" name="Language" [(ngModel)]="Language">
+                <option value="" disabled selected>Language</option>
+                <option value="Français">Français</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+        <div class="row">
+            <button class="col btn btn-danger" (click)="Add()">Add proverb</button>
+        </div>
+    </form>
 </div>
-<form>
-    <div class="row">
-        <input type="text" class="form-control col" placeholder="Saying" name="Saying" [(ngModel)]="Saying" />
-    </div>
-    <div class="row">
-        <input type="text" class="form-control col" placeholder="Author" name="Author" [(ngModel)]="Author" />
-    </div>
-    <div class="row">
-            <input type="text" class="form-control col" placeholder="Language" name="Language" [(ngModel)]="Language" />
-    </div>
-    <div class="row">
-            <button class="col btn btn-danger" (click)="Add()">Ajouter</button>
-    </div>
-</form>
-

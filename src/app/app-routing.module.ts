@@ -5,7 +5,7 @@ import { ProverbsAddComponent } from './proverbs-add/proverbs-add.component';
 
 
 const routes : Routes = [
-  {path: 'list', component: ProverbsListComponent},
+  {path: '', component: ProverbsListComponent},
   {path: 'add', component: ProverbsAddComponent},
   {path: 'update/:proverbId', component: ProverbsAddComponent},
 ]

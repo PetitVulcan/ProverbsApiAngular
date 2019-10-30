@@ -1,4 +1,43 @@
+.conteneur
+{
+    margin-right: 20px;
+}
 .proverb
 {
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin:0px;
+    border-bottom: 1px solid rgb(151, 151, 151);
+    font-size: 15px;
+}
+.author
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+.title
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color:rgb(252,250,233);
+    background-color: rgb(90,90,90);
+    border-radius: 5px;
+    border:2px solid orangered;
+}
+.bouton
+{
+    margin-right: auto;
+    margin-left: auto;
+    color:rgb(252,250,233);
+    background-color: rgb(90,90,90);
+    border-radius: 5px;
+    border:2px solid orangered;
+    padding: 5px;
+    cursor: pointer;
+}
+.col-2 .col-8
+{
+    border-spacing: 0px;
 }

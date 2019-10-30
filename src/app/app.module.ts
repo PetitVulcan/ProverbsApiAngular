@@ -10,7 +10,8 @@ import { ProverbsAddComponent } from './proverbs-add/proverbs-add.component';
 import { Routes } from '@angular/router';
 import { ApiService } from './api.service';
 import { HttpClientModule } from '@angular/common/http';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms"
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { LoginComponent } from './login/login.component'
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms"
     SideBarComponent,
     TopBarComponent,
     ProverbsListComponent,
-    ProverbsAddComponent
+    ProverbsAddComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
