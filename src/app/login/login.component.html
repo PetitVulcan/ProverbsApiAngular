@@ -1,1 +1,16 @@
-<p>login works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col title">Log In</div>
+    </div>
+    <form>
+        <div class="row line">
+            <input type="text" class="form-control col" placeholder="User Name" name="UserName" [(ngModel)]="UserName" />
+        </div>
+        <div class="row line">
+            <input type="password" class="form-control col" placeholder="Password" name="Password" name="Password" [(ngModel)]="Password" />
+        </div>
+        <div class="row">
+            <button class="col btn btn-danger" type="submit" (click)="LogIn()">Ok</button>
+        </div>
+    </form>
+</div>

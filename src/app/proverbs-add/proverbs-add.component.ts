@@ -45,7 +45,7 @@ export class ProverbsAddComponent implements OnInit {
       this.api.put("proverb/" + this.id, proverb).subscribe((res: any) => {
           alert(res.message);
           if (!res.error) 
-          this.router.navigate(["/"]);
+          this.router.navigate(["/list"]);
         });
     }
   }

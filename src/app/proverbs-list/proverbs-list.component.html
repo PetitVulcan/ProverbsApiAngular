@@ -2,13 +2,13 @@
     <div class="title">Proverbs List</div>
     
         <div *ngFor="let proverb of proverbs" class="row proverb">
-            <div class="col-9">{{proverb.saying}}</div>
-            <div class="col-2">
+            <div class="col-8">{{proverb.saying}}</div>
+            <div class="col-2 center">
                 <div class="author">
                 {{proverb.author}}
                 </div>
              </div>
-            <span class="col-1 right">
+            <span class="col-2 right">
                 <div class="row">
                     <div class="bouton" routerLink="/update/{{proverb.id}}">Modify</div>
                     <div class="bouton" (click)="Delete(proverb.id)">Delete</div>
