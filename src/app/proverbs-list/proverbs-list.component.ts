@@ -12,7 +12,7 @@ export class ProverbsListComponent implements OnInit {
   constructor(private api: ApiService, private router: Router) {}
 
   ngOnInit() {
-    this.api.get("proverb").subscribe(res => {
+    this.api.get("proverb/list").subscribe(res => {
       this.proverbs = res;
     });
   }

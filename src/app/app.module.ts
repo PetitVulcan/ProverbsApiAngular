@@ -11,7 +11,8 @@ import { Routes } from '@angular/router';
 import { ApiService } from './api.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { ProverbDailyComponent } from './proverb-daily/proverb-daily.component'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LoginComponent } from './login/login.component'
     TopBarComponent,
     ProverbsListComponent,
     ProverbsAddComponent,
-    LoginComponent
+    LoginComponent,
+    ProverbDailyComponent
   ],
   imports: [
     BrowserModule,

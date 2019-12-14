@@ -17,11 +17,13 @@ export class ProverbsAddComponent implements OnInit {
   ngOnInit() {
     if(this.route.snapshot.params.proverbId != undefined)
     {
+     
       this.api.get('proverb/'+this.route.snapshot.params.proverbId).subscribe((res:any) =>{
         this.id=res.id;
         this.Saying=res.saying;
         this.Author=res.author;
         this.Language=res.language;
+        console.log(res.saying);
       })
     }
   }
